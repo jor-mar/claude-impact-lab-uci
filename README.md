@@ -1,5 +1,9 @@
 # Fund it · Homes, people and a funding plan
 
+**Public website:** [Open Fund it](https://loganwu123.github.io/fund-it/#discover). No sign-in or running local server is required. Hosted from the `gh-pages` branch of `LoganWu123/fund-it`, a hosting fork of the team repository.
+
+After committing future website changes, publish them with `python3 scripts/publish_public_site.py --publish`. Run without `--publish` to preview the destination. Pushing the team repository alone does not update this separate hosting branch.
+
 The existing dashboard now includes **Discover Homes**: seven homes with exact-property listing photos, four real Orange County agent profiles with sourced public review scores, a preference-rated map, and browser-local saved collections. Work is isolated on `codex/discover-homes`.
 
 Run the committed static website without installing anything:

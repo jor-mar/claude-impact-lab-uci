@@ -68,7 +68,11 @@ Pins can include homes over budget or outside the preferred city so comparisons 
 
 Validation: Python importer/exporter tests, coordinate-integrity test, ten match-engine assertions, TypeScript checking, production bundle build and browser checks for real images, galleries, map ratings/popups/saving, review details, persistence, animation pause, mobile layout and console errors.
 
-The retained project ID in `.openai/hosting.json` returned `Sites project not found` through the current Sites connection. Its identity was preserved; no replacement Site or deployment is claimed. The local preview and feature branch are the deliverables until hosting access is restored.
+The retained project ID in `.openai/hosting.json` returned `Sites project not found` through the current Sites connection. Its identity was preserved. Public hosting instead uses GitHub Pages from the `gh-pages` branch of the hosting fork [LoganWu123/fund-it](https://github.com/LoganWu123/fund-it), where the user controls publishing settings. The team repository remains the collaboration source.
+
+Public website: [Fund it](https://loganwu123.github.io/fund-it/#discover), verified anonymously on November 8, 2026. Initial source commit: `557d63ff223423a180e99587e5cd22cdca4d7d75`; deployed artifact commit: `4a9f0a2657ec02696881aee16e385e10e80e4382`. HTTPS is enforced and Pages reports public access. Only the committed `dist/` tree and a `.nojekyll` marker are published to the hosting branch.
+
+Future updates: commit changes to the normal feature branch, then run `python3 scripts/publish_public_site.py --publish`. The helper uses an isolated temporary index, keeps normal working files and branches intact, and uses a fast-forward push. It publishes committed files only; run without `--publish` to preview the source and destination. Verify the public deployment after GitHub Pages finishes building.
 
 ## Globe layout correction
 
